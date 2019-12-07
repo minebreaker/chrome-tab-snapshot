@@ -1,0 +1,26 @@
+{
+  "name": "toggle-google-search",
+  "version": "0.1.0",
+  "description": "Toggle google search language",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run compile && npm run copy",
+    "compile": "tsc -p tsconfig.json",
+    "clean": "rimraf out/*",
+    "copy": "cpx src/*.html out/",
+    "watchBuild": "tsc -p tsconfig.json -w"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.91",
+    "cpx": "^1.5.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.27.8",
+    "typescript": "^3.7.3"
+  }
+}

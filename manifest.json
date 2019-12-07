@@ -1,0 +1,15 @@
+{
+  "name": "chrome-tab-snapshot",
+  "version": "0.1",
+  "description": "Takes a snapshot of current tabs",
+  "manifest_version": 2,
+  "permissions": ["tabs", "sessions"],
+  "background": {
+    "scripts": ["out/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon/icon.png",
+    "default_title": "Take a snapshot"
+  }
+}
