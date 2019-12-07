@@ -1,7 +1,7 @@
 {
-  "name": "toggle-google-search",
+  "name": "chrome-tab-snapshot",
   "version": "0.1.0",
-  "description": "Toggle google search language",
+  "description": "Takes tab snapshot",
   "main": "index.js",
   "scripts": {
     "build": "npm run compile && npm run copy",
